@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Advertising</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./image/city.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css
+    "
+    />
+    <link rel="stylesheet" href="../css/main.min.css" />
+  </head>
+
+  <body data-page>
+    <header class="header">
+      <div class="container header-container">
+        <a href="WebStudio" class="logo">
+          <span class="logo--blue">Media </span
+          ><span class="logo--white">Advertising</span></a
+        >
+
+        <button class="mobile_menu__button--open" data-menu-open>
+          <svg class="mobile_menu__icon--open" width="40" height="40">
+            <use href="./image/icons.svg#menu_open"></use>
+          </svg>
+        </button>
+
+        <nav class="nav">
+          <ul class="main-nav">
+            <li class="main-nav__item">
+              <a href="./Portfolio.html" class="main-nav__link">Наші роботи</a>
+            </li>
+
+            <li class="main-nav__item">
+              <a href="Контакты" class="main-nav__link" #contacts>Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="secondsry-nav">
+          <ul class="secondsry-nav__list">
+            <li class="secondsry-nav__item">
+              <a href="mailto:info@devstudio.com" class="secondary-nav__link"
+                ><svg class="secondary-nav__icon" width="16" height="12">
+                  <use href="./image/icons.svg#mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="secondsry-nav__item">
+              <a href="tel:+380931873269" class="secondary-nav__link">
+                <svg class="secondary-nav__icon" width="10" height="16">
+                  <use href="./image/icons.svg#modal-phone"></use></svg
+                >+38 093 187 32 69</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- -----------***| Мобильное меню |***---------- -->
+      <div class="mobile_menu" data-menu>
+        <button
+          class="mobile_menu__button--close"
+          type="button"
+          data-menu-close
+        >
+          <svg class="mobile_menu__icon--close" width="40" height="40">
+            <use href="./image/icons.svg#close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item">
+            <a href="./Portfolio.html" class="mobile-nav__link">Наші роботи</a>
+          </li>
+
+          <li class="mobile-nav__item">
+            <a href="Контакты" class="mobile-nav__link" #contacts>Контакти</a>
+          </li>
+        </ul>
+
+        <ul class="mobile_contacts">
+          <li class="mobile_contacts__item">
+            <a href="mailto:info@devstudio.com" class="mobile_contacts__link">
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile_contacts__item">
+            <a href="tel:+380961111111" class="mobile_contacts__link">
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- -----------***| Секция герой |***---------- -->
+      <section
+        class="hero"
+        style="background-image: url(./image/background.jpg)"
+      >
+        <div class="container">
+          <h1 class="hero__title">Зовнішня реклама<br />для вашого бізнесу</h1>
+
+          <a href="tel:+380931873269" class="hero__button">
+            <svg class="secondary-nav__icon" width="26" height="24">
+              <use href="./image/icons.svg#modal-phone"></use></svg
+            >Замовити послугу</a
+          >
+        </div>
+      </section>
+
+      <!-- -----------***| Список преимуществ |***---------- -->
+      <section class="benefits">
+        <div class="container">
+          <h2 class="">
+            Доступно, оперативно і якісно – саме так ми працюємо!
+          </h2>
+          <ul class="benefits_list">
+            <li class="benefits_item">
+              <div class="benefits_icon">
+                <svg width="70" height="70">
+                  <use href="./image/icons.svg#feature1"></use>
+                </svg>
+              </div>
+              <h3 class="benefits_title">Уважність до деталей</h3>
+              <p class="benefits_text">
+                Ми уважно ставимось до ваших побажань. Якісно виконана робота та
+                задоволений клієнт для нас приорітет
+              </p>
+            </li>
+
+            <li class="benefits_item">
+              <div class="benefits_icon">
+                <svg width="70" height="70">
+                  <use href="./image/atten.svg"></use>
+                </svg>
+              </div>
+              <h3 class="benefits_title">Пунктуальність</h3>
+              <p class="benefits_text">
+                Ми розуміємо, які важливі дедлайни, ви можете бути впевнені, що
+                вчасно отримаєте своє замовлення.
+              </p>
+            </li>
+
+            <li class="benefits_item">
+              <div class="benefits_icon">
+                <svg width="70" height="70">
+                  <use href="./image/icons.svg#feature3"></use>
+                </svg>
+              </div>
+              <h3 class="benefits_title">Досвід</h3>
+              <p class="benefits_text">
+                Ми працюємо вже більше 10 років. Наша команда точно знайде різні
+                рішення для виготовлення вашої реклами
+              </p>
+            </li>
+
+            <li class="benefits_item">
+              <div class="benefits_icon">
+                <svg class="icoon" width="70" height="70">
+                  <use href="./image/icons.svg#dollar"></use>
+                </svg>
+              </div>
+              <h3 class="benefits_title">Ціни</h3>
+              <p class="benefits_text">
+                Кожен виріб розраховується індивідуально. Вартістю послуг ви
+                будете задоволені
+              </p>
+            </li>
+
+            <li class="benefits_item">
+              <div class="benefits_icon">
+                <svg class="icoon" width="70" height="70">
+                  <use href="./image/icons.svg#dollar"></use>
+                </svg>
+              </div>
+              <h3 class="benefits_title">Якість</h3>
+              <p class="benefits_text">
+                Будьте спокійні стосовно свого замовлення. Ми подбаємо, щоб ви
+                отримали чудовий результат
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-------------***| Чем мы занимаемся |***---------- -->
+      <section class="specialization">
+        <div class="container">
+          <h2 class="specialization_title">Наші послуги</h2>
+          <div class="specialization_container">
+            <ul class="specialization_list">
+              <li class="specialization_item">Широкоформатний друк</li>
+              <li class="specialization_item">Інтер'єрний друк</li>
+              <li class="specialization_item">Друк банерів</li>
+              <li class="specialization_item">Поклейка плівки</li>
+            </ul>
+
+            <ul class="specialization_list">
+              <li class="specialization_item">Брендування транспорту</li>
+              <li class="specialization_item">Інформаційні стенди</li>
+              <li class="specialization_item">Оформлення вітрин</li>
+              <li class="specialization_item">Вивіски</li>
+              <li class="specialization_item">Об'ємні літери</li>
+            </ul>
+
+            <ul class="specialization_list">
+              <li class="specialization_item">Лайтбокси</li>
+              <li class="specialization_item">Сітілайти</li>
+              <li class="specialization_item">Акриллайти</li>
+              <li class="specialization_item">Фреймлайти</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- -----------***| Футер |***---------- -->
+    <footer class="footer" id="contacts">
+      <div class="container">
+        <ul class="footer-list">
+          <li>
+            <a href="WebStudio" class="logo">
+              <span class="logo-first-word">Media</span
+              ><span class="logo-white-word">Advertising</span></a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="footer-contact-link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380931873269" class="footer-contact-link"
+              >+38 093 187 32 69</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./menu.js"></script>
+  </body>
+</html>
