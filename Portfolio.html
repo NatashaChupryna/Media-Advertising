@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Media Advertising</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./image/city.png" type="image/x-icon" />
+   
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -23,30 +25,23 @@
   </head>
 
   <body>
-       <header class="header">
+<header class="header">
       <div class="container header-container">
-        <a href="WebStudio" class="logo">
-          <span class="logo--blue">Web</span
-          ><span class="logo--white">Studio</span></a
+        <a href="./index.html" class="logo">
+          <span class="logo--blue">Media </span
+          ><span class="logo--white">Advertising</span></a
         >
 
-         <button class="mobile_menu__button--open" data-menu-open >
-            <svg class="mobile_menu__icon--open" width="40" height="40">
-          <use href="./image/icons.svg#menu_open"></use>
+        <button class="mobile_menu__button--open" data-menu-open>
+          <svg class="mobile_menu__icon--open" width="40" height="40">
+            <use href="./image/icons.svg#menu_open"></use>
           </svg>
-          </button>
+        </button>
 
         <nav class="nav">
           <ul class="main-nav">
-
             <li class="main-nav__item">
-              <a href="./Portfolio.html" class=" main-nav__link main-nav__link--curent"
-                >Наші роботи</a
-              >
-            </li>
-
-            <li class="main-nav__item" #contacts>
-              <a href="Контакты" class=" main-nav__link">Контакти</a>
+              <a href="./Portfolio.html" class="main-nav__link">Наші роботи</a>
             </li>
           </ul>
         </nav>
@@ -54,69 +49,62 @@
         <div class="secondsry-nav">
           <ul class="secondsry-nav__list">
             <li class="secondsry-nav__item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="secondary-nav__link"
+              <a href="mailto:advertising4kiev@gmail.com" class="secondary-nav__link"
                 ><svg class="secondary-nav__icon" width="16" height="12">
                   <use href="./image/icons.svg#mail"></use>
                 </svg>
-                info@devstudio.com</a
+                advertising4kiev@gmail.com</a
               >
             </li>
             <li class="secondsry-nav__item">
-              <a href="tel:+380961111111" class="secondary-nav__link">
-                <svg class="secondary-nav__icon" width="10" height="16">
-                  <use href="./image/icons.svg#phone"></use></svg
-                >+38 096 111 11 11</a
+              <a href="tel:+380931873269" class="secondary-nav__link">
+                <svg class="secondary-nav__icon" width="18" height="16">
+                  <use href="./image/icons.svg#modal-phone"></use></svg
+                >+38 093 187 32 69</a
               >
             </li>
           </ul>
         </div>
+      </div>
+      <!-- -----------***| Мобільне меню |***---------- -->
+      <div class="mobile_menu" data-menu>
+        <button
+          class="mobile_menu__button--close"
+          type="button"
+          data-menu-close
+        >
+          <svg class="mobile_menu__icon--close"  width="30" height="30">
+            <use href="./image/icons.svg#close"></use>
+          </svg>
+        </button>
 
- <!-- -----------***| Мобильное меню |***---------- -->       
-  <div class="mobile_menu" data-menu>
-
-  <button class="mobile_menu__button--close" type="button" data-menu-close>
-    <svg class="mobile_menu__icon--close" width="40" height="40">
-  <use href="./image/icons.svg#close"></use>
-  </svg>
-</button>
-
-   <ul class="mobile-nav">
-
+        <ul class="mobile-nav">
           <li class="mobile-nav__item">
-              <a href="./Portfolio.html" class=" mobile-nav__link mobile-nav__link--curent"
-                >Наші роботи</a
-              >
+            <a href="./Portfolio.html" class="mobile-nav__link">Наші роботи</a>
           </li>
 
-          <li class="mobile-nav__item">
-              <a href="Контакты" class=" mobile-nav__link">Контакти</a>
-         </li>
-    </ul>
-        
-    <ul class="mobile_contacts">
-            <li class="mobile_contacts__item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="mobile_contacts__link">
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="mobile_contacts__item">
-              <a href="tel:+380961111111" class="mobile_contacts__link">
-                +38 096 111 11 11</a>
-            </li>
-    </ul>
-</div>
 
+        <ul class="mobile_contacts">
+          <li class="mobile_contacts__item">
+            <a href="mailto:advertising4kiev@gmail.com" class="mobile_contacts__link">
+              advertising4kiev@gmail.com</a
+            >
+          </li>
+          <li class="mobile_contacts__item">
+            <a href="tel:+380931873269" class="mobile_contacts__link">
+              +38 093 187 32 69</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
+
 
     <main>
       <section class="portfolio">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
-          <ul class="btn-list">
+          <!-- <ul class="btn-list">
             <li class="btn-list-item">
               <button type="button" class="portfolio-btn">Все</button>
             </li>
@@ -136,430 +124,345 @@
             <li class="btn-list-item">
               <button type="button" class="portfolio-btn">Маркетинг</button>
             </li>
-          </ul>
+          </ul> -->
 
           <ul class="portfolio-card-list">
-            <li class="portfolio-card">
-              <div class="portfolio-hover-div">
-              <picture>
-                <source media="(min-width: 1200px)"
-                srcset="./image/Portfolio/img1@1x_D.jpg 1x, 
-                ./image/Portfolio/img1@2x_D.jpg 2x"
-                >
-                
-                <source media="(min-width: 768px)"
-                srcset="./image/Portfolio/img1@1x_T.jpg 1x, 
-                ./image/Portfolio/img1@2x_T.jpg 2x"
-                >
-
-                <source media="(max-width: 767px)"
-                srcset="./image/Portfolio/img1@1x_M.jpg 1x, 
-                ./image/Portfolio/img1@2x_M.jpg 2x"
-                >
-                
+            <li class="portfolio-card">    
               <img 
-                src="./image/Portfolio/img1@1x_M.jpg" 
-                alt="ноутбук" 
+                src="./image/Portfolio/1.jpg" 
+                alt="приклад робіт" 
                 width="370" /> 
-            </picture>
-                
-
-                <div class="overlay">
-                  <p class="portfolio-hover-title">
-                    Ресурс предлагает комплексные предложения с разным уровнем
-                    функционала и сервисов. Все это позволит посетителю получить
-                    исчерпывающие сведения о компании или частном лице.
-                  </p>
-                </div>
-              </div>
-              <div class="portfolio-title-div fc">
-                <h2 class="portfolio-title">Технокряк</h2>
-                <p class="portfolio-category">Веб-сайт</p>
-              </div>
             </li>
 
-            <li class="portfolio-card">
-              <div class="portfolio-hover-div">
-            <picture>
-                <source media="(min-width: 1200px)"
-                srcset="./image/Portfolio/img2@1x_D.jpg 1x, 
-                ./image/Portfolio/img2@1x_D.jpg 2x"
-                >
-
-                <source media="(min-width: 768px)"
-                srcset="./image/Portfolio/img2@1x_T.jpg 1x, 
-                ./image/Portfolio/img2@1x_T.jpg 2x"
-                >
-                
-                <source media="(max-width: 767px)"
-                srcset="./image/Portfolio/img2@1x_M.jpg 1x, 
-                ./image/Portfolio/img2@1x_M.jpg 2x">
-
-                <img
-                  src="./image/Portfolio/img2@1x_M.jpg"
-                  alt="баскетбол"
-                  width="370"
-                />
-            </picture>
-
-                
-                <div class="overlay">
-                  <p class="portfolio-hover-title">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                    sapiente id exercitationem esse deleniti repellendus
-                    necessitatibus omnis tempora eius aliquid.
-                  </p>
-                </div>
-              </div>
-              <div class="portfolio-title-div">
-                <h2 class="portfolio-title">
-                  Постер New Orlean vs Golden Star
-                </h2>
-                <p class="portfolio-category">Дизайн</p>
-              </div>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/2.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
             </li>
 
-            <li class="portfolio-card">
-              <div class="portfolio-hover-div">
-                <picture>
-               <source media="(min-width: 1200px)"
-                srcset="./image/Portfolio/img3@1x_D.jpg 1x, 
-                ./image/Portfolio/img3@1x_D.jpg 2x"
-                >
-                <source media="(min-width: 768px)"
-                srcset="./image/Portfolio/img3@1x_T.jpg 1x, 
-                ./image/Portfolio/img3@1x_T.jpg 2x"
-                >               
-                 <source media="(max-width: 767px)"
-                srcset="./image/Portfolio/img3@1x_M.jpg 1x, 
-                ./image/Portfolio/img3@1x_M.jpg 2x"
-                >
-                <img
-                  src="./image/Portfolio/img3@1x_M.jpg"
-                  alt="лого ресторана"
-                  width="370"
-                />
-            </picture>
-               
-                <div class="overlay">
-                  <p class="portfolio-hover-title">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                    sapiente id exercitationem esse deleniti repellendus
-                    necessitatibus omnis tempora eius aliquid.
-                  </p>
-                </div>
-              </div>
-              <div class="portfolio-title-div">
-                <h2 class="portfolio-title">Ресторан Seafood</h2>
-                <p class="portfolio-category">Приложение</p>
-              </div>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/3.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
             </li>
-
-            <li class="portfolio-card">
-              <div class="portfolio-hover-div">
-                  <picture>
-               <source media="(min-width: 1200px)"
-                srcset="./image/Portfolio/img4@1x_D.jpg 1x, 
-                ./image/Portfolio/img4@1x_D.jpg 2x"
-                >
-
-                <source media="(min-width: 768px)"
-                srcset="./image/Portfolio/img4@1x_T.jpg 1x, 
-                ./image/Portfolio/img4@1x_T.jpg 2x"
-                >
-                
-                 <source media="(max-width: 767px)"
-                srcset="./image/Portfolio/img4@1x_M.jpg 1x, 
-                ./image/Portfolio/img4@1x_M.jpg 2x"
-                >
-                <img 
-                src="./image/Portfolio/img4@1x_M.jpg" 
-                alt="наушники" 
-                width="370" />
-            </picture>
-
-                
-
-                <div class="overlay">
-                  <p class="portfolio-hover-title">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                    sapiente id exercitationem esse deleniti repellendus
-                    necessitatibus omnis tempora eius aliquid.
-                  </p>
-                </div>
-              </div>
-              <div class="portfolio-title-div">
-                <h2 class="portfolio-title">Проект Prime</h2>
-                <p class="portfolio-category">Маркетинг</p>
-              </div>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/4.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
             </li>
-
-            <li class="portfolio-card">
-              <div class="portfolio-hover-div">
-                <picture>
-                
-                <source media="(min-width: 1200px)"
-                srcset="./image/Portfolio/img5@1x_D.jpg 1x, 
-                ./image/Portfolio/img5@1x_D.jpg 2x"
-                >
-                <source media="(min-width: 768px)"
-                srcset="./image/Portfolio/img5@1x_T.jpg 1x, 
-                ./image/Portfolio/img5@1x_T.jpg 2x"
-                >
-
-                <source media="(max-width: 767px)"
-                srcset="./image/Portfolio/img5@1x_M.jpg 1x, 
-                ./image/Portfolio/img5@1x_M.jpg 2x"
-                >
-                <img 
-                src="./image/Portfolio/img5@1x_M.jpg" 
-                alt="коробки" 
-                width="370" />
-            </picture>
-                
-
-                <div class="overlay">
-                  <p class="portfolio-hover-title">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                    sapiente id exercitationem esse deleniti repellendus
-                    necessitatibus omnis tempora eius aliquid.
-                  </p>
-                </div>
-              </div>
-              <div class="portfolio-title-div">
-                <h2 class="portfolio-title">Проект Boxes</h2>
-                <p class="portfolio-category">Приложение</p>
-              </div>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/5.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
             </li>
-
-            <li class="portfolio-card">
-              <div class="portfolio-hover-div">
-                <picture>
-               <source media="(min-width: 1200px)"
-                srcset="./image/Portfolio/img6@1x_D.jpg 1x, 
-                ./image/Portfolio/img6@2x_D.jpg 2x"
-                >
-                <source media="(min-width: 768px)"
-                srcset="./image/Portfolio/img6@1x_T.jpg 1x, 
-                ./image/Portfolio/img6@2x_T.jpg 2x"
-                >          
-                <source media="(max-width: 767px)"
-                srcset="./image/Portfolio/img6@1x_M.jpg 1x, 
-                ./image/Portfolio/img6@2x_M.jpg 2x"
-                >
-                <img 
-                src="./image/Portfolio/img6@1x_M.jpg" 
-                alt="монитор" 
-                width="370" />
-            </picture>
-               
-
-                <div class="overlay">
-                  <p class="portfolio-hover-title">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                    sapiente id exercitationem esse deleniti repellendus
-                    necessitatibus omnis tempora eius aliquid.
-                  </p>
-                </div>
-              </div>
-              <div class="portfolio-title-div">
-                <h2 class="portfolio-title">Inspiration has no Borders</h2>
-                <p class="portfolio-category">Веб-сайт</p>
-              </div>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/6.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
             </li>
-
-            <li class="portfolio-card">
-              <div class="portfolio-hover-div">
-                 <picture>
-                   <source media="(min-width: 1200px)"
-                srcset="./image/Portfolio/img7@1x_D.jpg 1x, 
-                ./image/Portfolio/img7@1x_D.jpg 2x"
-                >                
-                <source media="(min-width: 768px)"
-                srcset="./image/Portfolio/img7@1x_T.jpg 1x, 
-                ./image/Portfolio/img7@1x_T.jpg 2x"
-                >
-                <source media="(max-width: 767px)"
-                srcset="./image/Portfolio/img7@1x_M.jpg 1x, 
-                ./image/Portfolio/img7@1x_M.jpg 2x"
-                >
-               
-                 <img 
-                 src="./image/Portfolio/img7@1x_M.jpg" 
-                 alt="журнал" 
-                 width="370" />
-            </picture>
-               
-
-                <div class="overlay">
-                  <p class="portfolio-hover-title">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                    sapiente id exercitationem esse deleniti repellendus
-                    necessitatibus omnis tempora eius aliquid.
-                  </p>
-                </div>
-              </div>
-              <div class="portfolio-title-div">
-                <h2 class="portfolio-title">Издание Limited Edition</h2>
-                <p class="portfolio-category">Дизайн</p>
-              </div>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/7.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
             </li>
-
-            <li class="portfolio-card">
-              <div class="portfolio-hover-div">
-                <picture>
-                <source media="(min-width: 1200px)"
-                srcset="./image/Portfolio/img8@1x_D.jpg 1x, 
-                ./image/Portfolio/img8@1x_D.jpg 2x"
-                >
-                <source media="(min-width: 768px)"
-                srcset="./image/Portfolio/img8@1x_T.jpg 1x, 
-                ./image/Portfolio/img8@1x_T.jpg 2x"
-                >                
-                <source media="(max-width: 767px)"
-                srcset="./image/Portfolio/img8@1x_M.jpg 1x, 
-                ./image/Portfolio/img8@1x_M.jpg 2x"
-                >
-                <img 
-                src="./image/Portfolio/img8@1x_M.jpg" 
-                alt="лейб" 
-                width="370" />
-            </picture>
-                
-
-                <div class="overlay">
-                  <p class="portfolio-hover-title">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                    sapiente id exercitationem esse deleniti repellendus
-                    necessitatibus omnis tempora eius aliquid.
-                  </p>
-                </div>
-              </div>
-              <div class="portfolio-title-div">
-                <h2 class="portfolio-title">Проект LAB</h2>
-                <p class="portfolio-category">Маркетинг</p>
-              </div>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/8.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
             </li>
-
-            <li class="portfolio-card">
-              <div class="portfolio-hover-div">
-                <picture>
-                <source media="(min-width: 1200px)"
-                srcset="./image/Portfolio/img9@1x_D.jpg 1x, 
-                ./image/Portfolio/img9@1x_D.jpg 2x"
-                >
-                <source media="(min-width: 768px)"
-                srcset="./image/Portfolio/img9@1x_T.jpg 1x, 
-                ./image/Portfolio/img9@1x_T.jpg 2x"
-                >                
-                <source media="(max-width: 767px)"
-                srcset="./image/Portfolio/img9@1x_M.jpg 1x, 
-                ./image/Portfolio/img9@1x_M.jpg 2x"
-                >
-                
-                <img
-                  src="./image/Portfolio/img9@1x_M.jpg"
-                  alt="печать на пк"
-                  width="370"
-                />
-            </picture>
-                
-                <div class="overlay">
-                  <p class="portfolio-hover-title">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                    sapiente id exercitationem esse deleniti repellendus
-                    necessitatibus omnis tempora eius aliquid.
-                  </p>
-                </div>
-              </div>
-              <div class="portfolio-title-div">
-                <h2 class="portfolio-title">Growing Business</h2>
-                <p class="portfolio-category">Приложение</p>
-              </div>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/9.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
             </li>
-          </ul>
-        </div>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/10.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/11.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/12.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/13.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/14.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/15.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/16.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/17.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/18.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/19.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/20.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/21.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/22.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/23.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/24.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/25.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/26.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/27.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/28.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/29.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/30.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/31.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/32.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/33.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/34.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/35.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/36.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/37.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/38.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/39.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/40.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/41.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/42.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/43.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/44.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/45.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/46.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/47.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/48.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/49.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/50.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+               <li class="portfolio-card">    
+              <img 
+                src="./image/Portfolio/51.jpg" 
+                alt="приклад робіт" 
+                width="370" /> 
+            </li>
+           
+
+</ul>
+</div>
       </section>
     </main>
 
-     <footer class="footer" id="contacts">
-      <div class="container footer-block">
-        
-        <div class="footer-container">
-          <a href="WebStudio" class="logo">
-            <span class="logo-first-word">Web</span
-            ><span class="logo-white-word">Studio</span></a
-          >
-
-          <a
-            href="https://goo.gl/maps/T2ZpNwHjRuijeioPA"
-            class="link adress"
-            target="«_blank»"
-            rel="noopener noreferrer"
-          >
-            г. Киев, пр-т Леси Украинки, 26
-          </a>
-
-          <a href="mailto:info@devstudio.com" class="footer-contact-link"
-            >info@devstudio.com</a
-          >
-
-          <a href="tel:+380961111111" class="footer-contact-link"
-            >+38 096 111 11 11</a
-          >
-        </div>
-
-        <div class="footer-wrap">
-          <p class="footer-title">присоединяйтесь</p>
-          <ul class="footer_social_list">
-            <li>
-              <a href="https://www.instagram.com/" aria-label="Socialmedia" class="footer-social-link" target="_blank" rel="noopener noreferrer">
-                <svg class="social-link-svg" width="20px" height="20px">
-                  <use href="./image/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://twitter.com/?lang=ru" aria-label="Socialmedia" class="footer-social-link" target="_blank" rel="noopener noreferrer">
-                <svg class="social-link-svg" width="20px" height="20px">
-                  <use href="./image/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://uk-ua.facebook.com/" aria-label="Socialmedia" class="footer-social-link" target="_blank" rel="noopener noreferrer">
-                <svg class="social-link-svg" width="20px" height="20px">
-                  <use href="./image/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.linkedin.com/" aria-label="Socialmedia" class="footer-social-link" target="_blank" rel="noopener noreferrer">
-                <svg class="social-link-svg" width="20px" height="20px">
-                  <use href="./image/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        
-        
-          <form class="subscribe-form">
-          <p class="subscribe-form-title">Подпишитесь на рассылку</p>
-          <div class="subscribe-form-div">
-            <input type="mail" placeholder="E-mail" class="subscribe-form-input"/>
-          <button type="submit" class="submit-form-btn">Подписаться
-            <svg class="subscribe-form-svg" width="24" height="24">
-            <use href="./image/icons.svg#send"></use>
-            </svg>
-          </button>
-          </div>
-        </div>
-        </form>
-      
+        <footer class="footer" id="contacts">
+      <div class="container">
+        <ul class="footer-list">
+          <li class="footer-list-item">
+            <a href="./index.html" class="logo">
+              <span class="logo-first-word">Media</span
+              ><span class="logo-white-word">Advertising</span></a
+            >
+          </li>
+          <li class="footer-list-item">
+            <a href="mailto:advertising4kiev@gmail.com" class="footer-contact-link"
+              >advertising4kiev@gmail.com</a
+            >
+          </li>
+          <li class="footer-list-item">
+            <a href="tel:+380931873269" class="footer-contact-link"
+              >+38 093 187 32 69</a
+            >
+          </li>
+        </ul>
+      </div>
     </footer>
     <script src="./menu.js"></script>
   </body>

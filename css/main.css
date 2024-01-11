@@ -131,7 +131,6 @@ img {
   padding: 6px;
   top: 8px;
   right: 8px;
-  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   display: -webkit-box;
@@ -150,7 +149,11 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover .modal-close-btn {
+.modal-close-btn {
+  fill: #000000;
+}
+
+.modal-close-btn:hover .modal-close-btn:focus {
   fill: #ffd649;
 }
 
@@ -452,10 +455,10 @@ img {
 
 .mobile_contacts__item:first-child {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #ffd649;
+  color: #757575;
   margin-bottom: 32px;
 }
 
@@ -765,6 +768,7 @@ img {
 
 .hero__title {
   color: #ffffff;
+  text-shadow: #fc0 3px 0 25px;
   font-weight: 900;
   line-height: 1.62;
   text-align: center;
@@ -828,13 +832,19 @@ img {
 .benefits-pretext {
   text-align: justify;
   font-size: 16px;
+  letter-spacing: 1.4px;
+  line-height: 1.2;
 }
 @media screen and (min-width: 1200px) {
   .benefits-pretext .benefits_list {
     font-size: 20px;
-    line-height: 1.2;
     letter-spacing: 1.8px;
   }
+}
+
+.benefits-title {
+  text-align: center;
+  margin-top: 44px;
 }
 
 .benefits_list {
@@ -904,7 +914,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 @media screen and (min-width: 480px) {
@@ -957,7 +967,7 @@ img {
 
 /* Чем мы занимаемся */
 .specialization {
-  padding-top: 94px;
+  padding-top: 64px;
   padding-bottom: 94px;
 }
 
@@ -1022,6 +1032,10 @@ img {
     gap: 26px;
     font-size: 26px;
   }
+}
+
+.specialization_list:nth-child(2) {
+  margin-left: 12px;
 }
 
 .portfolio {
@@ -1234,8 +1248,9 @@ img {
 
 .footer {
   background-color: #222;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 .logo-first-word {
@@ -1269,10 +1284,10 @@ img {
   margin-bottom: 0;
 }
 
-.footer-list {
-  margin-top: 8px;
+.footer-list-item {
+  margin-top: 4px;
 }
 
-.footer-listfirst-child {
+.footer-list-item:first-child {
   margin-top: 0;
 }/*# sourceMappingURL=main.css.map */
