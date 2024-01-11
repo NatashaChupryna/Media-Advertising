@@ -825,6 +825,18 @@ img {
     padding-top: 94px;
   }
 }
+.benefits-pretext {
+  text-align: justify;
+  font-size: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .benefits-pretext .benefits_list {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 1.8px;
+  }
+}
+
 .benefits_list {
   padding: 0;
   margin: 0;
