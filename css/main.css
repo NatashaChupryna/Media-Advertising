@@ -60,6 +60,20 @@ img {
   overflow: hidden;
 }
 
+.visually-hidden_btn {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -768,7 +782,7 @@ img {
 
 .hero__title {
   color: #ffffff;
-  text-shadow: #fc0 3px 0 25px;
+  text-shadow: -3px 1px 22px rgb(0, 0, 0);
   font-weight: 900;
   line-height: 1.62;
   text-align: center;
@@ -1116,6 +1130,14 @@ img {
     margin-bottom: 0;
   }
 }
+.portfolio-card-list2 {
+  display: none;
+}
+
+.portfolio-card-list3 {
+  display: none;
+}
+
 .portfolio-card-list {
   padding: 0;
   margin-top: 40px;
@@ -1246,6 +1268,54 @@ img {
   margin-bottom: 0;
 }
 
+.portfolio-btn_down {
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  border: none;
+  margin: 0 auto;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.Sportfolio-btn_down {
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  border: none;
+  margin: 0 auto;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
 .footer {
   background-color: #222;
   padding-top: 40px;
@@ -1282,6 +1352,10 @@ img {
 
 .footer-contact-link:last-child {
   margin-bottom: 0;
+}
+
+.footer-list {
+  padding: 0;
 }
 
 .footer-list-item {
